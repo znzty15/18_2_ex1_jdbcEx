@@ -27,9 +27,9 @@
       try{ //실행하는곳
          Class.forName(driver);
          connection = DriverManager.getConnection(url, uid, upw);//연결하기
-         statement = connection.createStatement();            	//데이터 가져오기
-         resultset = statement.executeQuery(query);            	//실행 결과 값
-         //resultset = statement.executeUpdate(sql);			//update시 사용(update, delete등 값을 수정할때)
+         statement = connection.createStatement();            	 //데이터 가져오기
+         resultset = statement.executeQuery(query);            	 //실행 결과 값
+         //resultset = statement.executeUpdate(sql);			 //update시 사용(update, delete등 값을 수정할때)
          while(resultset.next()){ //데이터를 차례대로 불러옴(데이터가 있으면 참, 없으면(null) 거짓)
             String id = resultset.getString("id");
             String pw = resultset.getString("pw");
