@@ -34,12 +34,12 @@
             String id = resultset.getString("id");
             String pw = resultset.getString("pw");
             String name = resultset.getString("name");
-            String phone = resultset.getString("phone");
+            String ph = resultset.getString("ph");
             
             out.println("아이디 : " + id + "<br>");
             out.println("비밀번호 : " + pw + "<br>");
             out.println("이름 : " + name + "<br>");
-            out.println("전화번호 : " + phone + "<br>");
+            out.println("전화번호 : " + ph + "<br>");
             out.println("=========================<br>");
          }
       } catch(Exception e) { //에러나면 실행
@@ -55,6 +55,6 @@
             
          }
       }
-   %>   
+   %>
 </body>
 </html>
